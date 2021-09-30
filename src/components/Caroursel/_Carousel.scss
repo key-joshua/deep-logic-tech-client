@@ -1,0 +1,216 @@
+
+.carousel-container{
+    
+    width: 85%;
+    padding: 4vh 7.5%;
+    height: 80vh;
+    
+    margin:4vh auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: $paragraph-background;
+    font-family: $zilla-font;
+
+    .fading-container{
+        width: 59vw;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .fading-wrapper{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            animation: fadingScroll 40s infinite;
+            
+            div{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            animation: fadingAnim 40s ease-in-out infinite;
+            background-color: $fadingColor;
+            }
+            img{
+            object-fit: cover;
+            width: 59vw;
+            height: 100%;
+            }
+            @keyframes fadingAnim{
+                0%{
+                    background-color: transparent;
+                }
+                20%{
+                    background-color: transparent;
+                }
+                22.5%{
+                    background-color: $fadingColor;
+                }
+                25%{
+                    background-color: transparent;
+                }
+                45%{
+                    background-color: transparent;
+                }
+                47.5%{
+                    background-color: $fadingColor;
+                }
+                50%{
+                    background-color: transparent;
+                }
+                70%{
+                    background-color: transparent;
+                }
+                72.5%{
+                    background-color: $fadingColor;
+                }
+                75%{
+                    background-color: transparent;
+                }
+                95%{
+                    background-color: transparent;
+                }
+                97.5%{
+                    background-color: $fadingColor;
+                }
+                100%{
+                    background-color: transparent;
+                }
+                
+            }
+        }
+
+        @keyframes fadingScroll{
+            0%{
+                margin-left: 0;
+            }
+            
+            22.4%{
+                margin-left: 0%;
+            }
+            22.5%{
+                margin-left: -59vw;
+            }
+            22.6%{
+                margin-left: -59vw;
+            }
+           
+            47.4%{
+                margin-left: -59vw;
+            }
+            47.5%{
+                margin-left: -118vw;
+            }
+            47.6%{
+                margin-left: -118vw;
+            }
+            
+            72.4%{
+                margin-left: -118vw;
+            }
+            72.5%{
+                margin-left: -177vw;
+            }
+            72.6%{
+                margin-left: -177vw;
+            }
+            
+            
+            97.6%{
+                margin-left: -177vw;
+            }
+            97.7%{
+                margin-left: 0;
+            }
+            100%{
+                margin-left: 0;
+            }
+            
+        }
+        
+    }
+    
+
+    
+    .slider-container{
+        width: 25%;
+        height: 100%;
+        
+        overflow: hidden;
+
+        .slider-container-child{
+            height: fit-content;
+            width: 100%;
+            animation: sliderAnim 40s ease-in-out infinite;
+
+
+    
+            div{
+                width: 100%;
+                height: 39vh;
+                margin-bottom: 3vh;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+    
+                img{
+                    width: 100%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+                h5{
+                    width: 90%;
+                    height: 15%;
+                    padding: 5%;
+                    color: #000;
+                    background-color: #fff;
+                    font-weight: $x-small-weight;
+                    font-size: $x-small-size;
+                    line-height: 1.5;
+                    letter-spacing: 1.3px;
+                    overflow: hidden;
+                }
+            }
+        }
+        @keyframes sliderAnim{
+            0%{
+                margin-top: 0;
+            }
+            17.5%{
+                margin-top: 0;
+            }
+            20%{
+                margin-top: -42vh;
+            }
+            
+            42.5%{
+                margin-top: -42vh;
+            }
+            45%{
+                margin-top: -84vh;
+            }
+            67.5%{
+                margin-top: -84vh;
+            }
+            70%{
+                margin-top: -126vh;
+            }
+            92.5%{
+                margin-top: -126vh;
+            }
+            95%{
+                margin-top: -168vh;
+            }
+            99%{
+                margin-top: -168vh;
+            }
+            100%{
+                margin-top: -168vh;
+            }
+        }
+    }
+    
+}

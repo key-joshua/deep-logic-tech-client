@@ -1,0 +1,38 @@
+.blogs-body-container{
+    width: 95%;
+    margin:3rem auto;
+    display: flex;
+    justify-content: space-between;
+
+    div{
+        width: 17%;
+
+       
+    }
+    h1{
+        width: 17px;
+        margin:2vh auto;
+        font-size: $xx-large-size;
+        font-family: $roboto-font;
+        font-weight: 800;
+
+        border-bottom: 5px $red-color solid;
+        
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    p{
+        text-align: center;
+        font-size: $large-size;
+        font-family: $zilla-font;
+        font-weight: $medium-weight;
+       line-height: 2;
+       cursor: pointer;
+       transition: .5s ease-in-out;
+    }
+    p:hover{
+        color: $red-color;
+    }
+}

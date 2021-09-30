@@ -1,0 +1,72 @@
+.navbar-container{
+    
+    width: 96%;
+    padding: .7rem 2%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px $borderColor solid;
+    font-family: $roboto-font;
+    font-size: $medium-size;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 5;
+
+    div:first-child,ul,div:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div:first-child{
+        
+
+        svg:first-child{
+            margin-right: 1vw;
+            cursor: pointer;
+        }
+
+        
+    }
+  
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            list-style: none;
+            font-weight: $small-weight;
+            color: $borderColor;
+            cursor: pointer;
+            margin-left: 2vw;
+            transition: .5s;
+            
+        }
+
+        li:hover{
+            color: $red-color;
+        }
+      
+        li:last-child{
+            display: flex;
+            align-items: center;
+            
+            i{
+                color: #000;
+                font-size: $x-large-size;
+                margin-right: .5rem;
+            }
+        }
+    }
+    div:last-child{
+        
+        i{
+            font-size: $large-size;
+            cursor: pointer;
+        }
+    }
+}
+
+@import './Menu/Menu';

@@ -1,0 +1,56 @@
+
+*, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+$fadingColor:rgba(240, 241, 242, 0.459);
+$borderColor:#c8c8c8;
+
+$paragraph-background:#f0f1f2;
+
+$red-color:#e90606;
+
+
+$x-small-size:12px;
+$small-size:13px;
+$medium-size:14px;
+$large-size:17px;
+$x-large-size:20px;
+$xx-large-size:30px;
+
+
+$x-small-weight:500;
+$small-weight:400;
+$medium-weight:600;
+$larg-weight:700;
+
+
+$roboto-font: 'Roboto', sans-serif;
+$zilla-font:'Zilla Slab', serif;
+
+@import './components/Caroursel/Carousel';
+@import './components/navbar/Navbar';
+@import './components/blog/Blogs/Blogs';
+
+
+@media(max-width:1000px){
+    body{
+        width:1000px;
+        overflow: auto;
+    }
+    $x-small-size:10px;
+$small-size:11px;
+$medium-size:12px;
+$large-size:15px;
+$x-large-size:18px;
+$xx-large-size:28px;
+}

@@ -1,0 +1,11 @@
+@import '../Header/Header';
+
+@import '../BlogsBody/BlogsBody';
+
+.blogs-container{
+    background-color: $paragraph-background;
+    width: 85%;
+    margin:10vh auto;
+    padding:4rem 0;
+    
+}
